@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   $("#btn").click(function (event) {
     $("table").append("<caption></caption>");
     $("table").append("<thead></thead>");
@@ -20,7 +19,6 @@ $(document).ready(function () {
     $("tbody tr,tfoot tr").append("<td></td>");
     $("tbody tr,tfoot tr").append("<td></td>");
     $("tbody tr,tfoot tr").append("<td></td>");
-      });
 
     $.getJSON("data.json", function (jqdata) {
       $("caption").append(jqdata.title);
@@ -48,6 +46,5 @@ $(document).ready(function () {
       $("#showven td:nth-child(4)").append(jqdata.ven3);
       $("#showven td:last-child").append(jqdata.ven4);
     });
-    
   });
-
+});
